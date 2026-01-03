@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         搜索引擎切换器 / Search Engine Switcher
 // @name:en      Search Engine Switcher
-// @namespace    http://tampermonkey.net/se-switcher-custom
+// @namespace    https://github.com/MURChen/Search-Engine-Switcher
 // @version      1.0
-// @description  在搜索引擎页面左侧显示一个快速切换列表，节省「另开搜索引擎」的时间。支持自定义搜索引擎、关键词自动提取、Visual Studio Code 风格、夜间模式、拖拽排序、自定义自动收起规则、Favicon 本地缓存优化。
-// @description:en A highly customizable search engine switcher. Features: dynamic keywords, VS Code style, dark mode, drag-and-drop sorting, auto-hide rules, and favicon caching.
-// @author       Corlius & Assistant
+// @description  在搜索引擎页面左侧显示一个快速切换列表，节省「另开搜索引擎」的时间。支持自定义搜索引擎、夜间模式、自定义自动收起规则、Favicon 本地缓存优化。
+// @description:en A highly customizable search engine switcher. Features: dynamic keywords, dark mode, auto-hide rules, and favicon caching.
+// @author       MURC&Gemini
 // @license      MIT
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
 // @connect      www.google.com
 // @grant        GM_setValue
 // @grant        GM_getValue
