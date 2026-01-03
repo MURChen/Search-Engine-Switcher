@@ -1,15 +1,13 @@
 // ==UserScript==
 // @name         搜索引擎切换器 / Search Engine Switcher
 // @name:en      Search Engine Switcher
-// @namespace    http://tampermonkey.net/se-switcher-custom 修改
+// @namespace    http://tampermonkey.net/se-switcher-custom
 // @version      1.0
-// @description  在搜索引擎页面左侧显示一个快速切换列表，节省「另开搜索引擎」的时间。支持自定义搜索引擎、夜间模式、自定义自动收起规则、Favicon 本地缓存优化。
-// @description:en A highly customizable search engine switcher. Features: dynamic keywords, dark mode, auto-hide rules, and favicon caching.
-// @author       MURC&Gemini
+// @description  在搜索引擎页面左侧显示一个快速切换列表，节省「另开搜索引擎」的时间。支持自定义搜索引擎、关键词自动提取、Visual Studio Code 风格、夜间模式、拖拽排序、自定义自动收起规则、Favicon 本地缓存优化。
+// @description:en A highly customizable search engine switcher. Features: dynamic keywords, VS Code style, dark mode, drag-and-drop sorting, auto-hide rules, and favicon caching.
+// @author       Corlius & Assistant
 // @license      MIT
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
-//
-// === 权限申请说明 ===
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @connect      www.google.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -17,9 +15,7 @@
 // @grant        GM_deleteValue
 // @grant        GM_registerMenuCommand
 // @grant        GM_xmlhttpRequest
-//
-// === 运行模式 (默认：白名单模式) ===
-// 默认只在以下主流搜索引擎生效，以减少对浏览器的性能影响。
+// @run-at       document-body
 // @match        *://www.google.com/search*
 // @match        *://www.google.co.jp/search*
 // @match        *://www.google.com.hk/search*
@@ -31,13 +27,6 @@
 // @match        *://v2ex.com/*
 // @match        *://www.v2ex.com/*
 // @match        *://duckduckgo.com/*
-//
-// === ⚠️ 全网匹配开关 ===
-// 如果您希望在任何网站上都能呼出侧边栏（例如为了添加自定义的小众引擎），
-// 请删除下面一行开头的 "//" 符号，即可开启全网匹配：
-// // @match        *://*/*
-//
-// @run-at       document-body
 // ==/UserScript==
 
 // === 默认配置 ===
