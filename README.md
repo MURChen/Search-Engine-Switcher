@@ -28,7 +28,7 @@
 
 1.  安装浏览器扩展 [Tampermonkey](https://www.tampermonkey.net/) (油猴)。
 2.  点击下方链接安装脚本：
-    * [**👉 前往 Greasy Fork 安装**](https://greasyfork.org/zh-CN/scripts/YOUR_SCRIPT_ID) (推荐)
+    * [**👉 前往 Greasy Fork 安装**](https://greasyfork.org/zh-CN/scripts/561263) (推荐)
     * 或者直接安装本仓库的 `main.user.js`。
 
 ## 📖 使用教程 (How to Use)
